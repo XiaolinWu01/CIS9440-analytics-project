@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: nyc_school_raw
+    database: xw-cis-9440
+    schema: nyc_school_raw
+    tables:
+      - name: source_doe-dohmh_311
+        identifier: source_doe-dohmh_311
+      - name: nyc_cafeteriainspection
+        identifier: nyc_cafeteriainspection
