@@ -17,9 +17,20 @@ clean-targets:
 
 models:
   nyc_analytics:
-    +materialized: table
 
+    # ===== HW keep=====
     assignment_work:
+      staging:
+        +materialized: table
+        +schema: nyc_transit_restaurants_staging
+
+      marts:
+        +materialized: table
+        +schema: nyc_transit_restaurants_marts
+
+    # =====  Milestone 4 Project =====
+    project_group15:
+
       staging:
         +materialized: table
         +schema: nyc_school_staging
