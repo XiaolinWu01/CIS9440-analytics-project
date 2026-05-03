@@ -18,6 +18,7 @@ SELECT
     complaint_type,
     descriptor,
     status,
+    open_data_channel_type,
 
     agency,
     agency_name
